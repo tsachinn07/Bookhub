@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html ng-app="bookHub">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Hub</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
+</head>
+<body  ng-controller="mainController">
+	<!--Header-->
+	<header>
+		<!-- <div class="container">
+			<div class="logo">
+				<a href="#">
+					<img src="img" alt="BookHub">
+				</a>				
+			</div>
+			<div class="booksCounter">
+				
+			</div>
+		</div> -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      	</button>
+		      	<a class="navbar-brand" href="#">BookHub</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		        <ul class="nav navbar-nav navbar-right">
+		        <li>Total books:<span> 25</span></li>
+		        <li>Bookmark:<span> 20</span></li>     
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<section class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="form-group">
+								<div class="input-group">
+  									<span class="input-group-addon glyphicon glyphicon-search" id="basic-addon1"></span>
+									<input type="text" ng-model="abc" placeholder="Search (by name,author,rating)" name="searchbooks" class="form-control"/>
+  								</div>
+									{{abc}}
+							</div>
+						</div>
+						<div class="col-md-4">
+							<a class="btn btn-default pull-right" ><span class="glyphicon glyphicon-bookmark"></span> List Bookmarks</a>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-2">
+								<span class="glyphicon glyphicon-bookmark"></span>
+								<span> Sort by:</span>
+						</div>
+						<div class="col-md-10">
+							<div class="form-group">
+								<label class="radio-inline">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Rating"> Rating
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Price"> Price
+								</label>
+							</div>
+						</div>
+
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-unstyled bookslist">
+								<li>
+									<div class="book">
+										<span class="">25</span>
+										<p>Book name</p>
+										<span class="">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+								<li>
+									<div class="book">
+										<span class="">25</span>
+										<p>Book name</p>
+										<span class="">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+								<li>
+									<div class="book">
+										<span class="">25</span>
+										<p>Book name</p>
+										<span class="currency">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+								<li>
+									<div class="book">
+										<span class="">25</span>
+										<p>Book name</p>
+										<span class="currency">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+								<li>
+									<div class="book">
+										<span class="">25</span>
+										<p>Book name</p>
+										<span class="currency">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+								<li>
+									<div class="book">
+										<span class="currency">25</span>
+										<p>Book name</p>
+										<span class="currency">$ 250</span>
+										<span class="glyphicon glyphicon-forward"></span>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img/default.png" border="1" alt="Image">
+						</div>
+						<div class="col-md-6">
+							<div class="panel panel-default">
+							  <div class="panel-heading">
+							    <h3 class="panel-title">Book Detail</h3>
+							  </div>
+							  <div class="panel-body">
+							    <p><strong>Publisher:</strong> ABCDE</p>
+							    <p><strong>ISBN:</strong> 545454</p>
+							    <p><strong>Binding:</strong> ABCDF</p>
+							    <p><strong>Rating:</strong>
+									<span class="glyphicon glyphicon-star-empty"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+									<span class="glyphicon glyphicon-star-empty"></span>
+
+							    </p>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<strong>Description:</strong>
+					<p class="description">
+
+					</p>
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="btn btn-default btn-block glyphicon glyphicon-share-alt"><strong>Share</strong></a>					
+						</div>
+					<div class="col-md-6">
+						<a href="#" class="btn btn-default btn-block glyphicon glyphicon-bookmark"><strong>Bookmark</strong></a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p> &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. All Rights Reserved.<a href="#"> Bookhub.com</a></p>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/angular/app.js"></script>
+<!-- 	<script type="text/javascript" src="js/angular/controllers/maincontroller.js"></script> -->
+</body>
+</html>

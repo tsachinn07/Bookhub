@@ -1,0 +1,19 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+section{width: 100%;float: left;clear: both;margin-bottom: 20px;min-height: 100vh;}
+section.wrapper{
+	
+}
+.glyphicon-search{top:0px !important;}
+
+.bookslist{width: 100%;float: left;clear: both;}
+ul.bookslist li{display: block;width: 100%;margin-bottom: 10px;border: 1px solid #ddd;border-radius: 3px;float: left;}
+ul.bookslist li:hover{background-color: #ddd;cursor: pointer;}
+.book{width: 100%;float: left;}
+.book span{float: left;padding: 10px 12px;}
+.book p{float: left;padding:10px 5px;min-width:75%; margin-bottom: 0px; }
+.description{width: 100%;white-space: normal;border:1px solid #ddd;border-radius: 3px;min-height: 100px;}
+footer{width: 100%;float: left;padding: 10px 0px;text-align: center;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+footer p{margin-bottom: 0px;}
